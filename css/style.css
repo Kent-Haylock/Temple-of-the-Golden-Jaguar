@@ -224,4 +224,14 @@ footer {
   .game-controls button {
     width: 100%;
   }
+
+  .ending-message {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: #efe0b8;
+  color: #3b2a18;
+  padding: 1rem;
+  border-radius: 10px;
+  }
 }
