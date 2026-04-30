@@ -157,7 +157,7 @@ function showScene(sceneKey) {
   const scene = scenes[sceneKey];
 
   storyText.innerHTML = `<strong>${scene.title}</strong><br><br>${scene.text}`;
-  sceneImage.style.backgroundImage = "url('images/temple-entrance.jpeg')";
+  sceneImage.style.backgroundImage = `url('${scene.image}')`;
   sceneImage.textContent = "";
 
   choiceButtons.innerHTML = "";
