@@ -234,4 +234,12 @@ footer {
   padding: 1rem;
   border-radius: 10px;
   }
+
+  .scene-image {
+  height: 320px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+}
+
 }
