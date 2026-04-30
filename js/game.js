@@ -12,7 +12,7 @@ const scenes = {
   entrance: {
     title: "Temple Entrance",
     text: "You stand at the entrance of an ancient jungle temple hidden deep in the Belizean rainforest. Thick vines cover the stone doorway, and carvings of jaguars guard the entrance.",
-    image: images/temple-entrance.jpeg,
+    image: "images/temple-entrance.jpeg",
     sound: "jungle",
     choices: [
       { text: "Enter the temple", nextScene: "hallway" },
