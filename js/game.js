@@ -12,7 +12,7 @@ const scenes = {
   entrance: {
     title: "Temple Entrance",
     text: "You stand at the entrance of an ancient jungle temple hidden deep in the Belizean rainforest. Thick vines cover the stone doorway, and carvings of jaguars guard the entrance.",
-    image: "Temple Entrance",
+    image: images/temple-entrance.jpeg,
     sound: "jungle",
     choices: [
       { text: "Enter the temple", nextScene: "hallway" },
@@ -24,7 +24,7 @@ const scenes = {
   hallway: {
     title: "Dark Temple Hallway",
     text: "You step inside the temple. The hallway is dark and silent. Torches line the walls, but none are lit. At the end of the hallway, you see two paths.",
-    image: "Dark Temple Hallway",
+    image: "images/dark-hallway.jpeg",
     choices: [
       { text: "Light a torch", nextScene: "symbols", item: "Torch" },
       { text: "Walk forward in darkness", nextScene: "spikeTrap" },
@@ -35,7 +35,7 @@ const scenes = {
   symbols: {
     title: "Hidden Symbols",
     text: "The torch flickers to life. Strange symbols appear on the wall. One symbol shows a jaguar. Another shows a snake. A stone door waits ahead.",
-    image: "Hidden Symbols",
+    image: "images/symbols.jpeg",
     choices: [
       { text: "Press the jaguar symbol", nextScene: "treasure" },
       { text: "Press the snake symbol", nextScene: "pitTrap" }
@@ -45,7 +45,7 @@ const scenes = {
   treasure: {
     title: "Golden Jaguar Chamber",
     text: "The stone door slides open. In the centre of the chamber sits the Golden Jaguar statue glowing in the darkness. You have found the treasure and survived the temple.",
-    image: "Golden Jaguar Treasure",
+    image: "images/golden-jaguar.jpeg",
     ending: "Treasure Ending - You Win",
     choices: []
   },
@@ -157,7 +157,8 @@ function showScene(sceneKey) {
   const scene = scenes[sceneKey];
 
   storyText.innerHTML = `<strong>${scene.title}</strong><br><br>${scene.text}`;
-  sceneImage.textContent = scene.image;
+  sceneImage.style.backgroundImage = "url('images/temple-entrance.jpeg')";
+  sceneImage.textContent = "";
 
   choiceButtons.innerHTML = "";
 
