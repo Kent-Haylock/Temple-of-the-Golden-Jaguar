@@ -65,7 +65,7 @@ const scenes = {
   spikeTrap: {
     title: "Spike Trap",
     text: "You move carefully through the darkness. Suddenly, you hear a loud click. Spikes shoot from the walls before you can react.",
-    image: "spike-trap.jpeg",
+    image: "images/spike-trap.jpeg",
     ending: "Spike Trap Ending - Game Over",
     choices: []
   },
@@ -73,7 +73,7 @@ const scenes = {
   river: {
     title: "Underground River",
     text: "The passage opens into an underground river flowing beneath the temple. A small stone boat is tied to the shore.",
-    image: "Underground River",
+    image: "images/river-escape.jpeg",
     choices: [
       { text: "Take the boat", nextScene: "escape" },
       { text: "Follow the river path", nextScene: "hiddenPath" }
