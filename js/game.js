@@ -8,7 +8,7 @@ const soundToggle = document.getElementById("soundToggle");
 let inventory = [];
 let soundOn = true;
 
-const bgSound = new Audio("");
+const bgSound = new Audio("freesound_community-monk-chant-temple-fantasy-23124.mp3");
 bgSound.loop = true;
 bgSound.volume = 0.4; 
 
