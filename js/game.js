@@ -209,7 +209,13 @@ restartBtn.addEventListener("click", startGame);
 
 soundToggle.addEventListener("click", () => {
   soundOn = !soundOn;
-  soundToggle.textContent = soundOn ? "Sound: On" : "Sound: Off";
-});
 
+  if (soundOn) {
+    bgSound.play();
+    soundToggle.textContent = "Sound: On";
+  } else {
+    bgSound.pause();
+    soundToggle.textContent = "Sound: Off";
+  }
+});
 startGame();
