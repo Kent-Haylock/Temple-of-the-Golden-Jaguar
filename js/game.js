@@ -10,7 +10,7 @@ let soundOn = true;
 
 const bgSound = new Audio("freesound_community-monk-chant-temple-fantasy-23124.mp3");
 bgSound.loop = true;
-bgSound.volume = 0.4; 
+bgSound.volume = 1.0; 
 
 const scenes = {
   entrance: {
