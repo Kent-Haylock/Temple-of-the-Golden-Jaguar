@@ -154,6 +154,11 @@ const scenes = {
 
 function startGame() {
   inventory = [];
+
+  if (soundOn) {
+    bgSound.play();
+  }
+
   showScene("entrance");
 }
 
