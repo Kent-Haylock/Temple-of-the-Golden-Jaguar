@@ -237,9 +237,10 @@ footer {
 
   .scene-image {
   height: 500px;
+  border-radius: 12px;
   background-size: cover;
   background-position: center;
-  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
 
 }
