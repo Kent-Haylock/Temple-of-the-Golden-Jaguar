@@ -65,7 +65,7 @@ const scenes = {
   spikeTrap: {
     title: "Spike Trap",
     text: "You move carefully through the darkness. Suddenly, you hear a loud click. Spikes shoot from the walls before you can react.",
-    image: "Spike Trap",
+    image: "spike-trap.jpeg",
     ending: "Spike Trap Ending - Game Over",
     choices: []
   },
