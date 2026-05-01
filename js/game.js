@@ -8,6 +8,10 @@ const soundToggle = document.getElementById("soundToggle");
 let inventory = [];
 let soundOn = true;
 
+const bgSound = new Audio("");
+bgSound.loop = true;
+bgSound.volume = 0.4; 
+
 const scenes = {
   entrance: {
     title: "Temple Entrance",
